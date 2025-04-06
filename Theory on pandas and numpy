@@ -1,0 +1,49 @@
+Pandas
+
+Pandas is a very popular library for working with data
+A DataFrame is structured like a table or spreadsheet. The rows and the columns both have indexes, and you can
+perform operations on rows or columns separately.
+A pandas DataFrame can be easily changed and manipulated. Pandas has helpful functions for handling missing data,
+performing operations on columns and rows, and transforming data. If that wasn’t enough, a lot of SQL functions
+have counterparts in pandas, such as join, merge, filter by, and group by. With all of these powerful tools, it
+should come as no surprise that pandas is very popular among data scientists.
+
+
+NumPy
+
+NumPy is an open-source Python library that facilitates efficient numerical operations on large quantities of
+data. There are a few functions that exist in NumPy that we use on pandas DataFrames. For us, the most important
+part about NumPy is that pandas is built on top of it. So, NumPy is a dependency of Pandas.
+
+
+NumPy Arrays
+
+NumPy arrays are unique in that they are more flexible than normal Python lists. They are called ndarrays since
+they can have any number (n) of dimensions (d). They hold a collection of items of any one data type and can be
+either a vector (one-dimensional) or a matrix (multi-dimensional). NumPy arrays allow for fast element access
+and efficient data manipulation.
+Many operations can be performed on NumPy arrays which makes them very helpful for manipulating data:
+1. Selecting array elements
+2. Slicing arrays
+3. Reshaping arrays
+4. Splitting arrays
+5. Combining arrays
+6. Numerical operations (min, max, mean, etc)
+
+
+Pandas Series and Dataframes
+
+Just as the ndarray is the foundation of the NumPy library, the Series is the core object of the pandas library.
+A pandas Series is very similar to a one-dimensional NumPy array, but it has additional functionality that
+allows values in the Series to be indexed using labels. A NumPy array does not have the flexibility to do this.
+This labeling is useful when you are storing pieces of data that have other data associated with them. Say you
+want to store the ages of students in an online course to eventually figure out the average student age. If
+stored in a NumPy array, you could only access these ages with the internal ndarray indices 0,1,2.... With a
+Series object, the indices of values are set to 0,1,2... by default, but you can customize the indices to be
+other values such as student names so an age can be accessed using a name. Customized indices of a Series are
+established by sending values into the Series constructor.
+Another important type of object in the pandas library is the DataFrame. This object is similar in form to a
+matrix as it consists of rows and columns. Both rows and columns can be indexed with integers or String names.
+One DataFrame can contain many different types of data types, but within a column, everything has to be the
+same data type. A column of a DataFrame is essentially a Series. All columns must have the same number of
+elements (rows).
